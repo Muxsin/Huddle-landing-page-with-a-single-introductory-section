@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("../images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 0 20%;
+}
+
+header {
+    padding: 40px 0 20px;
+}
+
+main {
+    padding: 80px 0 40px;
+    min-height: 700px;
+    margin: 0 auto -100px;
+}
+
+footer {
+    text-align: end;
+    padding: 0 40px;
+}
+
+.header-brand {
+    width: 194px;
+}
+
+.content {
+    text-align: center;
+    display: flex;
+}
+
+.left {
+    flex: 2;
+}
+
+.right {
+    flex: 1.5;
+    text-align: start;
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 64px;
+}
+
+.illustration-mockups {
+    width: 100%;
+}
+
+.title {
+    margin-top: 60px;
+    font-size: 38px;
+}
+
+.description {
+    line-height: 1.7;
+    color: #eee;
+}
+
+.register-btn {
+    margin-top: 14px;
+    font-size: 15px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 999px;
+    border: none;
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 0 4px 4px rgba(32, 32, 32, 0.4);
+    transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: hsl(300, 69%, 71%);
+    box-shadow: 0 0 4px rgba(32, 32, 32, 0.3);
+    color: #fff;
+}
+
+.icon-item {
+    text-decoration: none;
+    color: #fff ;
+}
+
+.fab {
+    margin: 0 8px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.fab:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+.fa-facebook-f {
+    padding: 10px 13px;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url("../images/bg-mobile.svg");
+        background-size: contain;
+    }
+
+    .container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    main {
+        padding-top: 40px;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 50px;
+        height: 50px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+    
+    .right {
+        padding: 0;
+        text-align: center;
+    }
+
+    .header-brand {
+        width: 124px;
+    }
+
+    .register-btn {
+        padding: 14px;
+    }
+}
